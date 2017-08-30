@@ -11,7 +11,7 @@ module OmniAuth
                                :access_token_path  => "/oauth/access_token",
                                :authorize_path     => "/oauth/authorize"}
 
-      uid { raw_info['name'] }
+      uid { raw_info['name'].to_s }
 
       info do
         {
